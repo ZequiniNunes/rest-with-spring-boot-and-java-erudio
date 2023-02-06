@@ -1,7 +1,6 @@
 package br.com.erudio.services;
 
 import java.util.ArrayList;
-import java.util.Iterator;
 import java.util.List;
 import java.util.concurrent.atomic.AtomicLong;
 import java.util.logging.Logger;
@@ -18,7 +17,7 @@ public class PersonServices {
 	private Logger logger = Logger.getLogger(PersonServices.class.getName());
 	
 	public List<Person> findAll() {
-
+ 
 		logger.info("Finding all people!");
 		
 		List<Person> persons = new ArrayList<>();
@@ -40,6 +39,25 @@ public class PersonServices {
 		person.setAddress("uberlandia - minas");
 		person.setGender("male");
 		return person;
+	}
+	
+	public Person create(Person person) {	
+		
+		logger.info("Creating one person");
+		
+		return person;
+	}
+	
+	public Person update(Person person) {	
+		
+		logger.info("updating one person");
+		
+		return person;
+	}
+	
+	public void delete(String id) {	
+		
+		logger.info("Deleting one person");
 	}
 	
 	private Person mockPerson(int i) {
